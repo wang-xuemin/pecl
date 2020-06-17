@@ -1,7 +1,7 @@
 # pecl
 php version >= 7.0
 
-##### 解压扩张包
+##### 解压扩展包
 
 ##### 扩展php扩展模块
 phpize
