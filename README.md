@@ -12,7 +12,7 @@ phpize
 ##### 执行 make安装
 make && make install
 
-#####  php.ini添加对应扩张
+#####  php.ini添加对应扩展
 
 [yaf]  
 yaf.environ = product  
