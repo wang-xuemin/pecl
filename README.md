@@ -12,8 +12,11 @@ phpize
 ##### 执行 make安装
 make && make install
 
+##### 生产环境不建议开启xdebug，消耗性能
+
 #####  php.ini添加对应扩展
 
+```
 [yaf]  
 yaf.environ = product  
 yaf.library = NULL  
@@ -39,3 +42,4 @@ extension=memcached.so
 
 [amqp]  
 extension=amqp.so
+```
