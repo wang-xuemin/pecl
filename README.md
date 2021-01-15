@@ -1,5 +1,38 @@
-# pecl
-### php version >= 7.0
+# PECL官网
+http://pecl.php.net/package-stats.php
+
+### PECL安装工具，命令行安装扩展
+pecl install <pakgname>
+```
+pecl install redis
+```
+
+### amqp扩展依赖rabbitmq-c，需要先安装rabbitmq-c
+```
+MacOS安装
+brew install rabbitmq-c
+CentOS
+yum install rabbitmq-c
+Debian
+apt install rabbitmq-c
+FreeBSD
+pkg install rabbitmq-c
+```
+
+### rdkafka扩展依赖librdkafka，需要先安装librdkafka
+```
+MacOS安装
+brew install librdkafka
+CentOS
+yum install librdkafka
+Debian
+apt install librdkafka
+FreeBSD
+pkg install librdkafka
+```
+
+# PECL源码安装扩展
+### php version >= 7.0 && version <= 7.999
 
 ##### 解压扩展包
 
@@ -17,29 +50,60 @@ make && make install
 #####  php.ini添加对应扩展
 
 ```
-[yaf]  
-yaf.environ = product  
-yaf.library = NULL  
-yaf.cache_config = 0  
-yaf.name_suffix = 1  
-yaf.name_separator = ""  
-yaf.forward_limit = 5  
-yaf.use_namespace = 0  
-yaf.use_spl_autoload = 0  
-extension=yaf.so  
+[yaf]
+yaf.environ = product
+yaf.library = NULL
+yaf.cache_config = 0
+yaf.name_suffix = 1
+yaf.name_separator = ""
+yaf.forward_limit = 5
+yaf.use_namespace = 0
+yaf.use_spl_autoload = 0
+extension=yaf.so
 
-[xdebug]  
-zend_extension=xdebug.so
-
-[redis]  
+[redis]
 extension=redis.so
 
-[mongodb]  
+[swoole]
+extension=swoole.so
+
+[rdkafka]
+extension=rdkafka.so
+
+[redis]
+extension=redis.so
+
+[mongodb]
 extension=mongodb.so
 
-[memcached]  
+[memcached]
 extension=memcached.so
 
-[amqp]  
+[amqp]
 extension=amqp.so
+
+[mongodb]
+extension=mongodb.so
+
+[memcached]
+extension=memcached.so
+
+[amqp]
+extension=amqp.so
+
+[xdebug]
+zend_extension=xdebug.so
+xdebug.var_display_max_children = 10240
+xdebug.var_display_max_data = 10240
+xdebug.var_display_max_depth = 10240
+;xdebug.auto_trace = on
+;xdebug.collect_params = on
+;xdebug.collect_return = on
+;xdebug.trace_output_dir = "/Users/wangxuemin/nginx/xdebug"
+;xdebug.remote_enable = on
+;xdebug.profiler_enable = on
+;xdebug.profiler_enable_trigger = on
+;xdebug.profiler_output_name = cachegrind.out.%t.%p
+;xdebug.profiler_output_dir = "/Users/wangxuemin/nginx/xdebug"
+
 ```
