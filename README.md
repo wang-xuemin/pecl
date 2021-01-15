@@ -2,7 +2,7 @@
 http://pecl.php.net/package-stats.php
 
 ### PECL安装工具，命令行安装扩展
-pecl install <pakgname>
+pecl install \<pakgname\>
 ```
 pecl install redis
 ```
