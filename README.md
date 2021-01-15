@@ -61,9 +61,6 @@ yaf.use_namespace = 0
 yaf.use_spl_autoload = 0
 extension=yaf.so
 
-[redis]
-extension=redis.so
-
 [swoole]
 extension=swoole.so
 
@@ -73,9 +70,6 @@ extension=rdkafka.so
 [redis]
 extension=redis.so
 
-[mongodb]
-extension=mongodb.so
-
 [memcached]
 extension=memcached.so
 
@@ -84,12 +78,6 @@ extension=amqp.so
 
 [mongodb]
 extension=mongodb.so
-
-[memcached]
-extension=memcached.so
-
-[amqp]
-extension=amqp.so
 
 [xdebug]
 zend_extension=xdebug.so
