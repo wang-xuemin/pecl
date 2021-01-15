@@ -34,21 +34,18 @@ pkg install librdkafka
 # PECL源码安装扩展
 ### php version >= 7.0 && version <= 7.999
 
-##### 解压扩展包
-
-##### 扩展php扩展模块
+```
+1、解压扩展包
+2、扩展php扩展模块
 phpize
-
-##### 执行
+3、执行configure
 ./configure
-
-##### 执行 make安装
+4、执行 make安装
 make && make install
-
+```
 ##### 生产环境不建议开启xdebug，消耗性能
 
 #####  php.ini添加对应扩展
-
 ```
 [yaf]
 yaf.environ = product
