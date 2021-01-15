@@ -24,7 +24,7 @@ FreeBSD
 pkg install librdkafka
 ```
 ### PECL安装工具，命令行安装扩展
-pecl install \<pakgname\>
+pecl install \<packname\>
 ```
 pecl install redis
 ```
