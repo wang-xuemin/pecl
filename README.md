@@ -32,11 +32,11 @@ pecl install redis
 ### php version >= 7.0 && version <= 7.999
 ```
 1、解压扩展包
-2、扩展php扩展模块
+2、扩展php扩展模块，来生成编译检测脚本
 phpize
-3、执行configure
+3、执行configure，编译配置检测
 ./configure
-4、执行 make安装
+4、执行make安装，编译并安装
 make && make install
 ```
 ##### 生产环境不建议开启xdebug，消耗性能
