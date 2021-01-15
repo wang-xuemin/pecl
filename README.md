@@ -1,12 +1,5 @@
 # PECL官网
 http://pecl.php.net/package-stats.php
-
-### PECL安装工具，命令行安装扩展
-pecl install \<pakgname\>
-```
-pecl install redis
-```
-
 ### amqp扩展依赖rabbitmq-c，需要先安装rabbitmq-c
 ```
 MacOS安装
@@ -30,10 +23,13 @@ apt install librdkafka
 FreeBSD
 pkg install librdkafka
 ```
-
-# PECL源码安装扩展
+### PECL安装工具，命令行安装扩展
+pecl install \<pakgname\>
+```
+pecl install redis
+```
+### PECL源码安装扩展
 ### php version >= 7.0 && version <= 7.999
-
 ```
 1、解压扩展包
 2、扩展php扩展模块
