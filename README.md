@@ -1,5 +1,5 @@
 # PECL官网
-http://pecl.php.net/package-stats.php
+[http://pecl.php.net/package-stats.php](http://pecl.php.net/package-stats.php)
 ### amqp扩展依赖rabbitmq-c，需要先安装rabbitmq-c
 ```
 MacOS安装
