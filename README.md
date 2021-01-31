@@ -87,4 +87,8 @@ xdebug.var_display_max_depth = 10240
 ;xdebug.profiler_output_name = cachegrind.out.%t.%p
 ;xdebug.profiler_output_dir = "/Users/wangxuemin/nginx/xdebug"
 
+[apcu]
+ extension="apcu.so"
+ apc.enable_cli=1
+
 ```
