@@ -88,7 +88,7 @@ xdebug.var_display_max_depth = 10240
 ;xdebug.profiler_output_dir = "/Users/wangxuemin/nginx/xdebug"
 
 [apcu]
- extension="apcu.so"
- apc.enable_cli=1
+extension="apcu.so"
+apc.enable_cli=1
 
 ```
