@@ -11,7 +11,6 @@ apt install rabbitmq-c
 FreeBSD
 pkg install rabbitmq-c
 ```
-
 ### rdkafka扩展依赖librdkafka，需要先安装librdkafka
 ```
 MacOS安装
@@ -22,6 +21,17 @@ Debian
 apt install librdkafka
 FreeBSD
 pkg install librdkafka
+```
+### memcached扩展依赖libmemcached，需要先安装libmemcached
+```
+MacOS安装
+brew install libmemcached
+CentOS
+yum install libmemcached
+Debian
+apt install libmemcached
+FreeBSD
+pkg install libmemcached
 ```
 ### PECL安装工具，命令行安装扩展
 pecl install \<packname\>
